@@ -6,9 +6,9 @@ public class Main {
 
         String[] stringArr = {"bcd", "abd", "jude", "bcd"};
         System.out.println("Count of String duplications = " + searchStringDuplications(stringArr));
-
-        // Поиск второго минимума
         System.out.println("");
+        
+        // Поиск второго минимума
         int[] sourceArray2 = {-1, 4, 0, 2, 7, -3};
         System.out.println("Min = " + searchMin(sourceArray2));
         int[] reducedArray = reduceArray(sourceArray2, searchMin(sourceArray2));
