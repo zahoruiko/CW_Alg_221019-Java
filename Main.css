@@ -10,9 +10,9 @@ public class Main {
         
         // Поиск второго минимума
         int[] sourceArray2 = {-1, 4, 0, 2, 7, -3};
-        System.out.println("Min = " + searchMin(sourceArray2));
+/*         System.out.println("Min[1] = " + searchMin(sourceArray2)); */
         int[] reducedArray = reduceArray(sourceArray2, searchMin(sourceArray2));
-        System.out.println("Min = " + searchMin(reducedArray));
+        System.out.println("Min[2] = " + searchMin(reducedArray));
     }
 
     public static int searchIntDuplications(int[] sourceArray) {
