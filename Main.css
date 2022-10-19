@@ -18,7 +18,7 @@ public class Main {
     public static int searchIntDuplications(int[] sourceArray) {
         int countOfDuplications = 0;
         for (int i = 0; i < sourceArray.length; i++) {
-            for (int j = i + 1; j < sourceArray.length; j++) {
+            for (int j = 1; j < sourceArray.length; j++) {
                 if(sourceArray[i] == sourceArray [j]) {
                     System.out.println("Found - " + sourceArray[i]);
                     countOfDuplications++;
@@ -31,7 +31,7 @@ public class Main {
     public static int searchStringDuplications(String[] stringArr) {
         int countOfDuplications = 0;
         for (int i = 0; i < stringArr.length; i++) {
-            for (int j = i + 1; j < stringArr.length; j++) {
+            for (int j = 1; j < stringArr.length; j++) {
                 if(stringArr[i].equals(stringArr [j])) {
                     System.out.println("Found - " + stringArr[i]);
                     countOfDuplications++;
@@ -52,9 +52,9 @@ public class Main {
     }
 
     public static int[] reduceArray(int[] inputArray, int deleteElement) {
-        int[] newArray = new int[inputArray.length-1];
+        int[] newArray = new int[inputArray.length - 1];
         int j = 0;
-        for (int i=0; i < inputArray.length; i++) {
+        for (int i = 0; i < inputArray.length; i++) {
             if(inputArray[i] != deleteElement) {
                 newArray[j] = inputArray[i];
                 j++;
