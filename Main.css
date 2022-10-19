@@ -22,7 +22,7 @@ public class Main {
                 if(sourceArray[i] == sourceArray [j]) {
                     System.out.println("Found - " + sourceArray[i]);
                     countOfDuplications++;
-//                    break;
+                    break;
                 }
             }
         }
